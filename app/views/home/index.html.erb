@@ -1,0 +1,21 @@
+<table>
+	<thead>
+		<tr>
+			<%= content_tag( 'td', 'Parliament' ) %>
+			<%= content_tag( 'td', 'ID' ) %>
+			<%= content_tag( 'td', 'URL' ) %>
+			<%= content_tag( 'td', 'Action' ) %>
+			<%= content_tag( 'td', 'Signature Count' ) %>
+			<%= content_tag( 'td', 'Created at' ) %>
+			<%= content_tag( 'td', 'Opened at' ) %>
+			<%= content_tag( 'td', 'Closed at' ) %>
+			<%= content_tag( 'td', 'Moderation threshold reached at' ) %>
+			<%= content_tag( 'td', 'Response threshold reached at' ) %>
+			<%= content_tag( 'td', 'Government response at' ) %>
+			<%= content_tag( 'td', 'Government response on' ) %>
+			<%= content_tag( 'td', 'Government response summary' ) %>
+	</thead>
+	<tbody>
+		<%= render :partial => 'petition', :collection => @petitions %>
+	</tbody>
+</table>

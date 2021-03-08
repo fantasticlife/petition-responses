@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: petition_responses
+  host: localhost
+  pool: 5
